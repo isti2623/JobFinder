@@ -1,0 +1,130 @@
+html,
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #2FD196;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.centered-div {
+    height: 80vh;
+    width: 80vw;
+    background-color: white;
+    border-radius: 28px;
+    box-shadow: 0 8px 16px 0 rgba(-6, 6, 10, 0.3);
+    background-image: url("./assets/wave.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+}
+
+.heading-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 8rem 1rem 8rem;
+}
+
+.heading-section h3 {
+    color: #333030;
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.heading-section button {
+    width: 100px;
+    height: 35px;
+    background-color: #2FD196;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-weight: 600;
+
+}
+
+.content-section {
+    flex-grow: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.recruiter-img-div {
+    position: relative;
+}
+
+.recruiter-img {
+    width: 100%;
+    position: absolute;
+    left: -3vw;
+    bottom: 0;
+}
+
+.right-items h1 {
+    padding-top: 50px;
+    font-size: 3.2rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.search-div {
+    width: 70%;
+    background-color: #D4D4D4;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.search-div img {
+    height: 20px;
+    padding-left: 5px;
+}
+
+.search-div input {
+    width: 50%;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    padding-left: 10px;
+}
+
+.search-div button {
+    width: 120px;
+    height: 40px;
+    background-color: #2FD196;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+/* Now are are going to make it responsive */
+
+@media screen and (max-width: 1024px) {
+    .right-items h1 {
+        padding-top: 50px;
+        font-size: 2.2rem;
+        font-weight: bold;
+        margin: 0;
+    }
+
+    .search-div {
+        width: 85%;
+
+    }
+
+    .heading-section {
+
+        padding: 1rem 4rem 1rem 8rem;
+    }
+
+}
